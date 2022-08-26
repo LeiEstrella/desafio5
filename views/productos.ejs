@@ -1,0 +1,28 @@
+<%- include('./partials/nav.ejs')  %> 
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<h2>Lista de productos</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Foto</th>
+    </tr>
+    </thead>
+    <tbody>
+        <% productos.forEach(p => { %>
+            <tr>
+                <td><%= p.id %> </td>
+            <td><%= p.title %>  </td>
+            <td><%= p.price %> </td>
+            <td> <a href="/productos/detalle/<%= p.id %>"> <img width="250px" src="<%= p.img %> "></a></td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
+
+ 
+ 

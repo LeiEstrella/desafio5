@@ -1,0 +1,35 @@
+<%- include('./partials/nav.ejs')  %> 
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<form action="/productos" method="post">
+    <div class="container-fluid">
+        <h2 class="text-light bg-info">Agregar Productos</h2>
+
+        <div class="form-group">
+
+        <div class="">
+            <label>Nombre</label>
+        </div>
+        <div class="">
+            <input type="text" name="title" id="">
+        </div>
+        <div class="">
+            <label>Precio</label>
+        </div>
+        <div class="">
+            <input type="text" name="price" id="">
+        </div>
+        <div class="">
+            <label>Foto</label>
+        </div>
+        <div class="">
+            <input type="text" name="img" id="">
+        </div>
+        <input type="submit" value="Agregar producto">
+        
+    </div>
+    </div>
+</form>
+
